@@ -12,7 +12,7 @@ const tipo = document.getElementById("tipo");
 
 
 
-//Generador de cards para pokémones, tomando una lista de pokémones
+//Generador de las cards, tomando una lista de pokémones
 function crearTarjeta(listaPokemones) {
   const pokemonEncontrado = document.getElementById("resultado");
   pokemonEncontrado.innerHTML = listaPokemones
@@ -22,9 +22,9 @@ function crearTarjeta(listaPokemones) {
       <h2 style="font-family: pokemon hollow;">${pokemon.name.toUpperCase()}</h2>
       <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}" />
       <p style="font-family: pokemon solid;">Tipo: ${pokemon.types.map((t) => t.type.name).join(", ")}</p>
-      <p style="font-family: pokemon solid;">Altura: ${pokemon.height / 10} m</p>
-      <p style="font-family: pokemon solid;">Peso: ${pokemon.weight / 10} kg</p>
-      <a href="sheets.html?name=${pokemon.name}">Ver sheet de ${pokemon.name}</a>
+      <p style="font-family: pokemon solid;">Altura: ${pokemon.height} cm</p>
+      <p style="font-family: pokemon solid;">Peso: ${pokemon.weight} g</p>
+      <a href="./sheets.html?name=${pokemon.name}">Ver sheet de ${pokemon.name}</a>
     </div>
   `
     )
