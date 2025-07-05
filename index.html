@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PokeApp</title>
+  <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>PokeApp</h1>
+    <input type="text" id="searchInput" placeholder="Buscar Pokémon por nombre..."/>
+    <select id="typeFilter">
+      <option value="">Todos los tipos</option>
+      <!-- JS llenará los tipos -->
+    </select>
+    <select id="sortOrder">
+      <option value="asc">Nombre A-Z</option>
+      <option value="desc">Nombre Z-A</option>
+    </select>
+  </header>
+
+  <main>
+    <div id="pokemonContainer" class="card-container"></div>
+    <div id="pagination"></div>
+    <p id="errorMsg"></p>
+  </main>
+
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
