@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "pokemon hollow";
+  src: url(./src/fonts/poke-hollow.ttf);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pokemon solid";
+  src: url(./src/fonts/poke-solid.ttf);
+  font-weight: 10;
+  font-style: normal;
+}
+
+
+p {
+
+  margin: 0px;
+
+}
+
+
+
+
+
+
+
+.pokemon-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-width: 200px;
+  max-width: 200vw;
+
+  max-height: 60vh;
+
+
+
+  background: #f0f0f0;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  justify-items: center;
+
+  text-wrap: wrap;
+}
+
+
+#resultado {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 20px;
+  padding: 20px;
+  max-width: 80vw;
+margin: 0 auto;
+  justify-items: center;
+
+
+}
+
+.pokemon-card:hover {
+  transform: scale(1.02);
+}
+
+.pokemon-card img {
+  width: 10vw;
+  height: 10vw;
+
+  object-fit: fill;
+
+}
+
+
+
+header {
+  background-color: #E83E34;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+  box-shadow: 0px 3px 10px black;
+  margin-bottom: 2vw;
+
+  border-radius: 100px 10px 100px 10px;
+  /* 👆🏻😲 */
+
+}
+
+.logo img {
+  height: 60px;
+  max-width: 100%;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
+}
+
+
+html {
+    background: url(https://pokedle.net/img/Background.b373eb68.png) no-repeat 50% fixed;
+    background-size: cover;
+    background-color: #425c3c
+}
+

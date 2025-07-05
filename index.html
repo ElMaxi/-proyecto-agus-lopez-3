@@ -1,31 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PokeApp</title>
-  <link rel="stylesheet" href="./css/styles.css"/>
+  <link rel="icon" type="image/svg+xml" href="/pokeball.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>menú pokémon</title>
+  <link rel="stylesheet" href="./src/css/styles.css">
 </head>
-<body>
-  <header>
-    <h1>PokeApp</h1>
-    <input type="text" id="searchInput" placeholder="Buscar Pokémon por nombre..."/>
-    <select id="typeFilter">
-      <option value="">Todos los tipos</option>
-      <!-- JS llenará los tipos -->
-    </select>
-    <select id="sortOrder">
-      <option value="asc">Nombre A-Z</option>
-      <option value="desc">Nombre Z-A</option>
-    </select>
-  </header>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./src/pichulatitulo.png" alt="css es mi pasion" />
+      </div>
 
-  <main>
-    <div id="pokemonContainer" class="card-container"></div>
-    <div id="pagination"></div>
-    <p id="errorMsg"></p>
-  </main>
 
-  <script src="./js/scripts.js"></script>
-</body>
+      <div class="controls">
+        <input type="text" id="buscador" placeholder="Nombre del pokémon" />
+ <button id="buscarNombreBtn">Buscar por nombre</button>
+
+
+        <select id="tipo">
+          <option value="all">Todos los tipos</option>
+                    <option value="normal">Fuego</option>
+          <option value="fighting">Pelea</option>
+          <option value="flying">Volador</option>
+          <option value="poison">Veneno</option>
+          <option value="ground">Tierra</option>
+          <option value="rock">Roca</option>
+          <option value="bug">Insecto</option>
+          <option value="ghost">Fantasma</option>
+          <option value="steel">Acero</option>
+          <option value="fire">Fuego</option>
+          <option value="water">Agua</option>
+          <option value="grass">Planta</option>
+          <option value="psychic">Psiquico</option>
+          <option value="ice">Hielo</option>
+          <option value="dragon">Dragón</option>
+          <option value="dark">Sombra</option>
+          <option value="fairy">Hada</option>
+          <option value="stellar">Estelar</option>
+          <option value="unknown">[Desconocido]</option>
+        </select>
+
+
+        <select id="orden">
+          <option value="idAsc">ID ascendente</option>
+          <option value="idDesc">ID descendente</option>
+          <option value="nomAsc">Nombre Ascendente</option>
+          <option value="nomDesc">Nombre Descendente</option>
+        </select>
+      </div>
+    </header>
+    <main>
+
+
+
+      <div id=resultado></div>
+
+      </div>
+      
+      <script type="module" src="./src/index.js"></script>
+    </main>
+  </body>
 </html>
